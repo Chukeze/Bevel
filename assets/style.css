@@ -1,20 +1,28 @@
 :root{
     --primary-color: #1F2937;
-    --secondary-color: rgb(238, 233, 233);
+    --secondary-color: rgb(255, 255, 255);
+
+    --background-accent: #e5e7eb;
 
     --main-text-colors: #F9faf8;
+    --button-color: #3882f6;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
-    margin-inline: auto;
-    padding: 0 43px;
+    margin: 0;
+    padding: 0;
+    margin-inline: 1 auto;
 }
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1px 16px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.7);
+    z-index: 1;
 }
 .logo{
     color: var(--main-text-colors);
@@ -32,6 +40,64 @@ header{
     font-size: 18px;
 }
 main{
+    display: flex;
+}
+.main__content-wrapper{
     flex: 1;
     display: flex;
+    flex-direction: column;
+}
+.sidebar{
+    flex-shrink: 0;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: var(--main-text-colors);
+}
+.sidebar--border{
+    border-radius: .05em .15em;
+    border: ridge black 2px;
+}
+.about-section{
+    background-color: var(--primary-color);
+    color: var(--main-text-colors);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section--padding{
+    padding: 1em 2em;
+}
+.about-section__hero-text{
+    max-width: 300px;
+}
+.about-section__image-container{
+    border-radius: 2%;
+}
+.about-section__hero-text button{
+    padding: .5em 1em;
+    border-radius: .5em;
+    background-color:var(--button-color);
+    color: var(--main-text-colors);
+    font-size: 16px;
+    font-weight: 600;
+}
+.about-section__cta--shadow{
+    box-shadow: 1px 2px rgba(0,0,0,.7);
+}
+.faq{
+    background-color: var(--background-accent);
+}
+.sign-up{
+    background-color: var(--secondary-color);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 2em ;
+}
+footer a{
+    text-decoration: none;
+    color: var(--main-text-colors);
 }
