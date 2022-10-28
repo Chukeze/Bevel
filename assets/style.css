@@ -5,6 +5,8 @@
     --background-accent: #e5e7eb;
     --color-accent-200: rgba(123,131,211,.8);
 
+    --stock-panel: rgba(31,41,55,.88);
+
     --main-text-colors: #F9faf8;
     --button-color: #3882f6;
 }
@@ -51,7 +53,7 @@ main{
 .sidebar{
     flex-shrink: 0;
     padding: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--stock-panel);
     color: var(--main-text-colors);
 }
 .sidebar--border{
