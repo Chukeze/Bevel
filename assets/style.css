@@ -3,6 +3,7 @@
     --secondary-color: rgb(255, 255, 255);
 
     --background-accent: #e5e7eb;
+    --color-accent-200: rgba(123,131,211,.8);
 
     --main-text-colors: #F9faf8;
     --button-color: #3882f6;
@@ -63,6 +64,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em;
 }
 .about-section--padding{
     padding: 1em 2em;
@@ -84,20 +86,99 @@ main{
 .about-section__cta--shadow{
     box-shadow: 1px 2px rgba(0,0,0,.7);
 }
-.faq{
-    background-color: var(--background-accent);
-}
 .sign-up{
     background-color: var(--secondary-color);
+    margin-bottom: 5em;
 }
-footer{
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    height: 100%;
+    padding-block: 2em 2em;
+}
+.sign-up-wrapper{
+    display: flex;
+    gap: 36px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gainsboro;
+    height: 100%;
+    padding: 3em 2em;
+    width: 50%;
+}
+.card{
+    background-color: transparent;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.card--dimension{
+    height: max-content;
+    width: max-content;
+}
+.card__image{
+    border-radius: 1em 1em;
+    border: 2px solid var(--color-accent-200);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90px;
+    width: 90px;
+}
+.account-wrapper{
+    display: flex;
+    gap: 36px;
+    flex-flow: row wrap;
+}
+.faq{
+    background-color: var(--primary-color);
+}
+.reviews ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    list-style: none;
+    padding: 0;
+}
+.review-cards{
+    flex: 0 0 auto;
+    width: 100%;
+}
+.review-cards > *{
+    width: 35%;
+}
+.review-cards img{
+    width: 4.5rem;
+    position: relative;
+    top: calc(4.5rem / 2);
+    left: calc(8rem /2);
+    margin-inline: auto;
+    border-radius: 50%;
+    height: 4.5rem;
+}
+.review__content{
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem;
+    background-color: gainsboro;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     background-color: var(--primary-color);
     padding: 2em ;
 }
 footer a{
     text-decoration: none;
     color: var(--main-text-colors);
+}
+.icon-attribution{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px ;
 }
