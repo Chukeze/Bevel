@@ -120,7 +120,7 @@ main{
     margin-bottom: 5em;
     font-weight: var(--font-weight-semibold);
 }
-.flex-container{
+.sign-up__flex-container{
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -128,7 +128,7 @@ main{
     height: 100%;
     padding-block: 2em 2em;
 }
-.sign-up-wrapper{
+.sign-up__sign-up-wrapper{
     display: flex;
     gap: 36px;
     justify-content: flex-start;
@@ -138,14 +138,14 @@ main{
     padding: 3em 2em;
     width: 50%;
 }
-.card{
+.sign-up__card{
     background-color: transparent;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card--dimension{
+.sign-up__card--dimension{
     height: max-content;
     width: max-content;
 }
@@ -158,7 +158,7 @@ main{
     height: 90px;
     width: 90px;
 }
-.account-wrapper{
+.sign-up__account-wrapper{
     display: flex;
     gap: 36px;
     flex-flow: row wrap;
