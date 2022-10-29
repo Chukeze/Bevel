@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 :root{
     --primary-color: #1F2937;
     --secondary-color: rgb(255, 255, 255);
@@ -13,6 +13,7 @@
     --section-text:rgb(185, 185, 185);
 
     --font-family:'Signika Negative', 'Roboto', sans-serif;
+    --logo-font-family:'Righteous';
     --font-weight-light:300;
     --font-weight-regular:400;
     --font-weight-medium:500;
@@ -27,6 +28,7 @@ body{
     margin: 0;
     padding: 0;
     margin-inline: 1 auto;
+    font-family: var(--font-family);
 }
 h1{
     text-align: center;
@@ -47,6 +49,7 @@ header{
     color: var(--main-text-colors);
     font-weight: var(--font-weight-extrabold);
     font-size: 24px;
+    font-family: var(--logo-font-family);
 }
 .primary-navigation ul{
     display: flex;
@@ -197,6 +200,7 @@ main{
     flex: 0 0 auto;
     width: 100%;
 }
+
 .review-cards > *{
     width: 35%;
 }
@@ -213,6 +217,9 @@ main{
     border-radius: 2rem;
     padding: 1rem 1rem 1rem;
     background-color: gainsboro;
+}
+.review__content > h3{
+    text-align: center;
 }
 footer{
     display: flex;
