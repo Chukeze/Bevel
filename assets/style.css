@@ -90,16 +90,20 @@ main{
 .about-section{
     background-color: var(--primary-color);
     color: var(--main-text-colors);
+    margin-bottom: 1em;
+}
+.about-section__flex-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
+    margin-inline: auto;
+    padding-block: 1em 1em;
 }
 .about-section--padding{
     padding: 1em 2em;
 }
 .about-section__hero-text{
-    max-width: 300px;
+    max-width: 500px;
 }
 .about-section__image-container{
     border-radius: 2%;
